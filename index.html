@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>API</title>
+</head>
+<body background="immagini/sfondorosso.jpg">
+    
+    <div id="riquadro">
+        <h1>Benvenuto nel miglior sito di battute squallide su chuck norris!!</h1>
+    </div>
+
+
+    <div class="immagine2">
+        <img src="immagini/sfondobinario2.png" alt="img binario2">
+    </div>
+    
+      
+    
+   
+    <div class="freccia"></div>
+    <div class="freccia2"></div>
+    <div class="freccia3"></div>
+    <div class="freccia4"></div>
+
+    <div class="frecciabottone1"></div>
+    <div class="frecciabottone2"></div>
+
+    
+    
+   
+    <div class="illustrazione">
+        <p><b class="grassetto">-Questo che stai leggendo ora, ti illustrerà</b>
+                <b class="grassetto2">un piccolo elenco puntato
+                    su ciò che puoi fare su questo sito.</p></b> 
+    </div>
+
+    <div id="ElencoPuntato">
+        <ul>
+            <li>1. cliccare dei bottoni</li>
+            <li>2. vedere una battuta su chuck norris</li>
+            <li>3. vedere battute su categorie particolari</li>
+            <li>4. la 3 non so se riesco a farla hahahah </li>
+        </ul>
+    </div>
+
+    
+    
+    <button id="jokeButton">Dammi una barzelletta di Chuck Norris</button>
+    <div id="jokeDisplay"></div>
+
+    <script>
+        document.getElementById('jokeButton').addEventListener('click', function() {
+            // Esegui una richiesta GET all'API di Chuck Norris
+            fetch('https://api.chucknorris.io/jokes/random')
+            .then(function(response) {
+                if (!response.ok) {
+                    throw new Error('Errore di rete');
+                }
+                return response.json();
+            })
+            .then(function(data) {
+                // Visualizza la barzelletta nella pagina
+                document.getElementById('jokeDisplay').innerText = data.value;
+            })
+            .catch(function(error) {
+                console.error('Errore durante il fetch dei dati:', error);
+            });
+        });
+    </script>
+    
+
+    
+    
+    
+
+
+    
+    
+</body>
+</html>

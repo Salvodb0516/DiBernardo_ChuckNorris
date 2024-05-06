@@ -1,0 +1,145 @@
+/*ho collegato il file css ad html, ed in seguito ho creato queste righe per dire che: 
+il mio riquadro deve essere alto e largo centrando la pagina web, con un bordo nero di 3px+*/
+
+#riquadro {
+  width: 500px;
+  height: 200px;
+  border: 3px solid black;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -150%);
+}
+
+.freccia {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid rgb(34, 0, 255); /* Imposta il colore RGB e decidiamo grandezza, largehzza freccia ecc */
+  position: absolute;
+  top: 40%;
+  left: 49%
+}
+
+.freccia2 {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid rgb(34, 0, 255); /* Imposta il colore RGB e decidiamo grandezza, largehzza freccia ecc */
+  position: absolute;
+  top: 44%;
+  left: 49%
+}
+
+.freccia3 {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid rgb(34, 0, 255); /* Imposta il colore RGB e decidiamo grandezza, largehzza freccia ecc */
+  position: absolute;
+  top: 68%;
+  left: 49%
+}
+
+.freccia4 {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid rgb(34, 0, 255); /* Imposta il colore RGB e decidiamo grandezza, largehzza freccia ecc */
+  position: absolute;
+  top: 72%;
+  left: 49%
+}
+
+
+
+.immagine1 {
+  display: flex;
+  width: auto;
+  height: 735px; /*height 785px */
+  position: absolute;
+  top: 0;
+  left: -0.0%;
+}
+
+.immagine2{
+  display: flex;
+  width: auto;
+  height: 735px;
+  position: absolute;
+  top: 0;
+  right: -0.0%;
+}
+
+
+
+.illustrazione {
+  width: 500px;
+  height: 100px;
+  border: 3px solid black;
+  padding: 10px;
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%,-300%);
+}
+
+.grassetto { 
+  text-transform: bold;
+}
+
+.grassetto2 {
+  text-transform: bold;
+}
+
+#ElencoPuntato {
+  width: 500px;
+  height: 100px;
+  border: 3px solid black;
+  padding: 10px;
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%, -120%);
+}
+
+.frecciabottone1{
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid rgb(34, 0, 255); /* Imposta il colore RGB e decidiamo grandezza, largehzza freccia ecc */
+  position: absolute;
+  top: 94%;
+  left: 49%
+}
+
+#jokeButton {
+  width: 230px;
+  height: 100px;
+  position: absolute;
+  top: 100%;
+  left: 42%;
+  background-color: rgb(34, 0, 255);
+  color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.jokeDisplay{
+  width: 230px;
+  height: 300px;
+  position: absolute;
+  top: 10%;
+  left: 42%;
+}
+
+
